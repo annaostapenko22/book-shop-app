@@ -13,7 +13,13 @@ router.get("/add-product", (req, res, next) => {
   // res.send(
   //   "<form action='/admin/add-product' method='POST'><input type='text' name='title'><button>click</button></form>"
   // );
-  res.render("add-product", { pageTitle: "Add Product", path: "/admin/add-product",productCSS: true, formsCSS: true, activeAddProduct: true });
+  res.render("add-product", {
+    pageTitle: "Add Product",
+    path: "/admin/add-product",
+    productCSS: true,
+    formsCSS: true,
+    activeAddProduct: true,
+  });
   // res.sendFile(path.join(rootDir, "views", "add-product.html"));
   // next();
 });
