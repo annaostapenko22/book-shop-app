@@ -53,3 +53,15 @@ exports.getCheckout = (req, res, next) => {
   // console.log("products here", products);
 };
 
+exports.getOrders = (req, res, next) => {
+  res.render("shop/orders", {
+    // prods: products,
+    title: "Orders",
+    path: "/orders",
+    pageTitle: "Orders",
+    // hasProducts: products.length > 0,
+    activeShop: true,
+    productCSS: true,
+  });
+  // console.log("products here", products);
+};
